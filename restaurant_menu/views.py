@@ -7,6 +7,16 @@ class MenuListView(generic.ListView):
     queryset = MenuItem.objects.order_by("meal")
     template_name = "index.html"
 
+    def get_context_data(self):
+        context = {
+            "meals": ["pizza", "pasta", "salad"],
+            "ingredients": [
+                "tomato",
+                "tomato",
+            ],
+        }
+        return context
+
 
 class MenuItemDetailView(generic.DetailView):
     model = MenuItem
