@@ -25,28 +25,24 @@ Built using:
 
 ## 🗂 Project Structure
 
+```text
 50_Food_Ordering_App_with_Django/
-│
-├── manage.py
-├── db.sqlite3
-│
-├── mysite/
-│   └── settings.py
-│
-├── restaurant_menu/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   ├── admin.py
-│   └── migrations/
-│
-└── templates/
-    ├── base.html
-    ├── index.html
-    └── menu_item_detail.html
+|-- manage.py
+|-- db.sqlite3
+|-- mysite/
+|   `-- settings.py
+|-- restaurant_menu/
+|   |-- admin.py
+|   |-- models.py
+|   |-- urls.py
+|   |-- views.py
+|   `-- migrations/
+`-- templates/
+    |-- base.html
+    |-- index.html
+    `-- menu_item_detail.html
 
 ---
-
 ## 🧠 Models
 
 ### MenuItem
